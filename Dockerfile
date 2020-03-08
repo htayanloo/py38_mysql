@@ -1,4 +1,5 @@
 FROM python:3.8-alpine
+
 COPY requirements.txt /tmp/requirements.txt
 RUN pip install --upgrade pip
 RUN apk add --no-cache jpeg-dev zlib-dev && \
