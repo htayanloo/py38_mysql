@@ -7,7 +7,7 @@ RUN apk add --no-cache jpeg-dev zlib-dev && \
     pip install --no-cache-dir -r /tmp/requirements.txt && \
     apk del g++ mariadb-dev && \
     apk del .build-deps && \
-    apk add --no-cache mariadb-client-libs tzdata
+    apk add --no-cache mariadb-client tzdata
 ENV TZ Asia/Tehran
 
 
